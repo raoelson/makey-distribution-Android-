@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_feuille_route"
+            android:icon="@drawable/ic_menu_feuilles"
+            android:title="Feuilles de route" />
+        <item android:title="Ajouter arrêts dans tournée">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_scanner"
+                        android:icon="@drawable/ic_menu_camera"
+                        android:title="Scanner" />
+                    <item
+                        android:id="@+id/nav_listes"
+                        android:icon="@drawable/ic_menu_list"
+                        android:title="Listes des adresses geocoder" />
+                </group>
+            </menu>
+        </item >
+        <item android:title="Administration">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_profil"
+                        android:icon="@drawable/ic_menu_profil"
+                        android:title="Mon profil" />
+                    <item
+                        android:id="@+id/nav_setting"
+                        android:icon="@drawable/ic_menu_setting"
+                        android:title="Paramètre" />
+                    <item
+                        android:id="@+id/nav_deconnec"
+                        android:icon="@drawable/ic_menu_deconnexion"
+                        android:title="Déconnexion" />
+                </group>
+            </menu>
+        </item >
+    </group>
+
+
+</menu>

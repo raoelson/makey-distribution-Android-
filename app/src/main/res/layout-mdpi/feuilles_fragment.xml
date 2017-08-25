@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="70dp"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/colorAccent"
+        android:text="Sélectionner un planning"
+        android:textColor="@color/result_text"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/spinnerPalnning"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/spinnerIDPalnning"
+        android:visibility="gone"
+        android:layout_below="@+id/spinnerPalnning"
+        android:layout_centerHorizontal="true" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/spinnerTournee"
+        android:layout_below="@+id/spinnerIDPalnning"
+        android:layout_centerHorizontal="true" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/spinnerIDTournee"
+        android:visibility="gone"
+        android:layout_below="@+id/spinnerTournee"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="AFFICHER LA FEUILLE DE ROUTE"
+        android:textSize="11dp"
+        android:id="@+id/btnAffichage"
+        android:theme="@style/AppTheme.Button"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/spinnerIDTournee"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="AFFICHER LA FEUILLE DE ROUTE"
+        android:textSize="11dp"
+        android:visibility="invisible"
+        android:drawableLeft="@android:drawable/ic_dialog_map"
+        android:id="@+id/btnTest"
+        android:theme="@style/AppTheme.ButtonAffichage"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/spinnerIDTournee"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/myrecyclerview"
+        android:layout_marginTop="-2dp"
+        android:layout_below="@+id/btnTest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:scrollbars="none" />
+</RelativeLayout>
